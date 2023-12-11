@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
+
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
@@ -45,5 +46,3 @@ export const NavBar = () => {
         </Navbar>
     );
 };
-
-export default NavBar;

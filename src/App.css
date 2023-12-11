@@ -222,9 +222,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /*Banner*/
 .banner{
-  margin-top: 0;
+  margin: 0;
   padding: 200px 0 100px 0;
-  background-image: url('assets/images/bg.jpg');
+  background: linear-gradient(to bottom, transparent, rgba(46, 24 , 96, 1)), url('assets/images/bg.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -274,6 +274,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
   margin: auto;
+  height: 80px;
 }
 
 .banner button i{
@@ -309,6 +310,84 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .wrap{
   border-right: 0.08em solid #666;
+}
+
+/* Skills */
+.skill{
+  padding: 50px 0 50px 0;
+  position: relative;
+  background: linear-gradient(180deg, rgba(46, 24 , 96, 1) 0%, rgba(102, 53, 160, 0.8) 100%);
+}
+
+.skill-box{
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+}
+
+.skill h2{
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.skill h5 {
+  margin-top: 15px;
+}
+
+.skill p{
+  color: #B8B8B8;
+  font-size: 20px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
+
+}
+
+.skill-slider{
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.skill-slider .item i{
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+
+/* Percentages */
+@keyframes rellenar{
+  to{
+    stroke-dasharray: var(--percentage) 105;
+  }
+}
+
+.percentage{
+  position:relative;
+}
+.percentage span{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+svg circle{
+  fill: none;
+  stroke-width: 20;
+  transform: rotate(-90deg);
+  transform-origin: 50%;
+  stroke-dasharray: 100 100;
+  stroke: #fff;
+}
+svg circle:nth-child(2){
+  stroke: var(--color);
+  stroke-dasharray: 0 100;
+  animation: rellenar 10s linear forwards
 }
 
 /*App config*/

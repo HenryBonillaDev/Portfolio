@@ -71,11 +71,9 @@ export const Banner = () => {
           </button>
         </Col>
         <Col xs={12} md={6} xt={5}>
-          <img src={image} alt="Imagen de upklyak en Freepik" />
+          <img src={image} alt="Imagen" />
         </Col>
       </Row>
     </section>
   );
 };
-
-export default Banner;
