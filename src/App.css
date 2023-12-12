@@ -37,7 +37,6 @@ h6 {
   line-height: normal;
 }
 
-
 /*NavBar*/
 nav.navbar {
   padding: 18px 0;
@@ -221,27 +220,32 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /*Banner*/
-.banner{
+.banner {
   margin: 0;
   padding: 200px 0 100px 0;
-  background: linear-gradient(to bottom, transparent, rgba(46, 24 , 96, 1)), url('assets/images/bg.jpg');
+  background: linear-gradient(to bottom, transparent, rgba(46, 24, 96, 1)),
+    url("assets/images/bg.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.banner .tagline{
+.banner .tagline {
   font-weight: 700;
   letter-spacing: 0.9px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(117, 72 , 165, 0.8) 0%, rgba(99, 177, 216, 0.8) 100%);
+  background: linear-gradient(
+    90.21deg,
+    rgba(117, 72, 165, 0.8) 0%,
+    rgba(99, 177, 216, 0.8) 100%
+  );
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
 }
 
-.banner h1{
+.banner h1 {
   font-size: 50px;
   font-weight: 700;
   letter-spacing: 0.8;
@@ -251,18 +255,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   -webkit-text-stroke: 0.6px black;
 }
 
-.banner p{
+.banner p {
   padding: 20px;
   text-align: justify;
   -webkit-text-stroke: 0.6px black;
   color: #fff;
-  font-size: 20PX;
-  letter-spacing: 0.8PX;
+  font-size: 20px;
+  letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 100%;
 }
 
-.banner button{
+.banner button {
   color: #fff;
   -webkit-text-stroke: 0.6px black;
   background: transparent;
@@ -277,27 +281,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 80px;
 }
 
-.banner button i{
+.banner button i {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
 
-.banner button:hover i{
-  margin-left: 25px
+.banner button:hover i {
+  margin-left: 25px;
 }
 
-.banner button:hover{
+.banner button:hover {
   font-size: 25px;
 }
-.banner img{
+.banner img {
   width: 50%;
   animation: updown 3s linear infinite;
 }
 
 @keyframes updown {
-  0%{
+  0% {
     transform: translateY(-20px);
   }
   50% {
@@ -308,25 +312,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-.wrap{
+.wrap {
   border-right: 0.08em solid #666;
 }
 
 /* Skills */
-.skill{
+.skill {
   padding: 50px 0 50px 0;
   position: relative;
-  background: linear-gradient(180deg, rgba(46, 24 , 96, 1) 0%, rgba(102, 53, 160, 0.8) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 24, 96, 1) 0%,
+    rgba(27,2,44, 1) 100%
+  );
 }
 
-.skill-box{
+.skill-box {
   background: #151515;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
 }
 
-.skill h2{
+.skill h2 {
   font-size: 45px;
   font-weight: 700;
 }
@@ -335,36 +343,35 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 15px;
 }
 
-.skill p{
-  color: #B8B8B8;
+.skill p {
+  color: #b8b8b8;
   font-size: 20px;
   line-height: 1.5em;
   margin: 14px 0 75px 0;
-
 }
 
-.skill-slider{
+.skill-slider {
   width: 90%;
   margin: 0 auto;
   position: relative;
 }
 
-.skill-slider .item i{
+.skill-slider .item i {
   width: 50%;
   margin: 0 auto 15px auto;
 }
 
 /* Percentages */
-@keyframes rellenar{
-  to{
+@keyframes rellenar {
+  to {
     stroke-dasharray: var(--percentage) 105;
   }
 }
 
-.percentage{
-  position:relative;
+.percentage {
+  position: relative;
 }
-.percentage span{
+.percentage span {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -376,7 +383,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 25px;
 }
 
-svg circle{
+svg circle {
   fill: none;
   stroke-width: 20;
   transform: rotate(-90deg);
@@ -384,11 +391,155 @@ svg circle{
   stroke-dasharray: 100 100;
   stroke: #fff;
 }
-svg circle:nth-child(2){
+svg circle:nth-child(2) {
   stroke: var(--color);
   stroke-dasharray: 0 100;
-  animation: rellenar 10s linear forwards
+  animation: rellenar 10s linear forwards;
 }
+
+/* Projects */
+.projects {
+  padding: 80px 0;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(27,2,44, 1) 0%,
+    rgb(81, 81, 81) 100%
+  );
+}
+
+
+
+
+.projects h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.projects p {
+  color: #b8b8b8;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 60%;
+}
+
+.projects .nav.nav-pills {
+  width: 72%;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: rgb(255 255 255 / 10%);
+  overflow: hidden;
+}
+
+.projects .nav.nav-pills .nav-item {
+  width: 50%;
+}
+
+.projects .nav.nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 17px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
+
+.projects .nav.nav-pills .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #aa367c -5%, #4a2fbd 111%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.projects .nav.nav-pills .nav-link.active::before {
+  width: 100% !important;
+}
+
+.projects .nav.nav-pills .nav-link.active{
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.nav-link#projects-tabs-tab-first {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 55px 0 0 55px;
+}
+.nav-link#projects-tabs-tab-second {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 55px 55px 0;
+}
+
+.proj-imgbox {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.proj-imgbox img{
+  width: 100%;
+}
+
+.proj-imgbox::before{
+  content: "";
+  background: linear-gradient(90deg, #aa367c -5%, #4a2fbd 111% );
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.proj-imgbox:hover::before{
+  height: 100%;
+}
+
+.proj-txt{
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+
+.proj-imgbox:hover .proj-txt{
+  top:50%;
+  opacity: 1;
+}
+
+.proj-txt h4{
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+}
+
+.proj-txt span{
+  color: #B8B8B8;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  font-size: 15px;
+}
+
+
 
 /*App config*/
 .App {
