@@ -36,13 +36,13 @@ export const Contact = () => {
             {
                 method: "POST",
                 headers: { "Content-Type": "Application/json" },
-                body: JSON.stringify(form),
+                body: JSON.stringify(formDetails),
             }
         );
         setButtonText('Enviado')
-        let result = await response.json();
+        let result = response;
         setFormDetails(form)
-        if (result.code === 200) {
+        if (result.status === 200) {
             setStatus({ success: true, message: "El mensaje fue enviado." })
         } else {
             setStatus({ success: false, message: "Hubo un problema, Si el problema persiste no dudes en contactarme por LinkedIn." })
@@ -59,7 +59,7 @@ export const Contact = () => {
                     <h2>
                         Contactar
                     </h2>
-                    <form>
+                    <form onSubmit={submit}>
                         <Row>
                             <Col sm={6} className="px-1">
                                 <input type="text" value={formDetails.firstName} placeholder="Nombre" onChange={(e) => { onFormUpdate('firstName', e.target.value) }} />
