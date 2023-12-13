@@ -78,7 +78,7 @@ export const Contact = () => {
                             </Col>
                             <Col sm={12} className="px-1">
                                 <ReCAPTCHA
-                                    sitekey="6Lc-ly8pAAAAAA10FbglaPO62tigmF2CV58_nreP"
+                                    sitekey="6Lc5oS8pAAAAANvVBpQpfjlLA-FAPZuXflHA7Ga7"
                                     onChange={onChange}
                                 />
                             </Col>
