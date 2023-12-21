@@ -21,6 +21,14 @@ export const NavBar = () => {
         setActiveLink(value);
     }
 
+    const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+    
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
@@ -39,7 +47,7 @@ export const NavBar = () => {
                             <a href="https://www.linkedin.com/in/henry-duvan-alexander-bonilla-urrego/" target="_blank"><i className="bi bi-linkedin"></i></a>
                             <a href="https://github.com/HenryBonillaDev" target="_blank"><i className="bi bi-github"></i></a>
                         </div>
-                        <button className="vvd" onClick={() => { console.log("click") }}><span>Contactar</span></button>
+                        <button className="vvd" onClick={() => { scrollToSection("contact") }}><span>Contactar</span></button>
                     </span>
                 </Navbar.Collapse>
             </Container>

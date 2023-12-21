@@ -1,30 +1,48 @@
 import { Col, Container, Row } from "react-bootstrap"
 import Tab from 'react-bootstrap/Tab';
 import { ProjectCard } from "./ProjectCard";
-import img_test from "../assets/images/developer_banner.png"
+import img_calc from "../assets/images/projects/calc.png"
+import img_center from "../assets/images/projects/Centros_Geometricos.png"
+import img_marvel from "../assets/images/projects/Marvel-game.png"
+import img_data_extraction from "../assets/images/projects/DataExtraction.png"
+import img_power_apps from "../assets/images/projects/PowerApps.png"
+import img_power_automate from "../assets/images/projects/PowerAutomate.png"
 import Nav from 'react-bootstrap/Nav';
 
 export const Projects = () => {
     const projects = [
         {
-            title: "Proyecto1",
-            desc: "Descripcion del proyecto",
-            imgUrl: img_test
+            title: "Extracción de datos",
+            desc: "Descarga de PDFs y pasarlos a texto para calcular la frecuencia de las palabras con xdotool y python",
+            imgUrl: img_data_extraction
         },
         {
-            title: "Proyecto 2",
-            desc: "Descripcion del proyecto",
-            imgUrl: img_test
+            title: "Calculadora",
+            desc: "Calculadora con React",
+            imgUrl: img_calc
         },
         {
-            title: "Proyecto 3",
-            desc: "Descripcion del proyecto",
-            imgUrl: img_test
+            title: "Marvel Game",
+            desc: "Juego 2D hecho en JAVA",
+            imgUrl: img_marvel
+        },
+    ]
+
+    const projects2 = [
+        {
+            title: "Centros Geométricos",
+            desc: "Sistema para hallar centros geométricos en JAVA",
+            imgUrl: img_center
         },
         {
-            title: "Proyecto 4",
-            desc: "Descripcion del proyecto",
-            imgUrl: img_test
+            title: "Envio de Correos Power Automate",
+            desc: "Response API para enviar correos",
+            imgUrl: img_power_automate
+        },
+        {
+            title: "Sistema de gestion de inventario - Power Apps",
+            desc: "Sistema de gestion de inventario para un almacen de venta de suelos o baldosas",
+            imgUrl: img_power_apps
         },
     ]
     return (
@@ -33,7 +51,7 @@ export const Projects = () => {
                 <Row>
                     <Col>
                         <h2>Proyectos</h2>
-                        <p>Descripción</p>
+                        <p>En esta sección, se presentan los proyectos que he realizado haciendo uso de diversas tecnologías.</p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
@@ -58,7 +76,7 @@ export const Projects = () => {
                                 <Tab.Pane eventKey="second">
                                     <Row>
                                         {
-                                            projects.map((project, index) => {
+                                            projects2.map((project, index) => {
                                                 return (
                                                     <ProjectCard key={index}{...project}></ProjectCard>
                                                 )

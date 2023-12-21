@@ -35,20 +35,32 @@ export const Skills = () => {
                             <p>Descripción</p>
                             <Carousel className="skill-slider" responsive={responsive} infinite={true} >
                                 <div className="item">
-                                    <Percentage percentage={70} color="#63b1d8"></Percentage>
-                                    <h5>Desarrollo web</h5>
-                                </div>
-                                <div className="item">
                                     <Percentage percentage={80} color="#63b1d8"></Percentage>
                                     <h5>Java / Spring Boot</h5>
                                 </div>
                                 <div className="item">
-                                    <Percentage percentage={80} color="#63b1d8"></Percentage>
-                                    <h5>Desarrollo web</h5>
+                                    <Percentage percentage={60} color="#63b1d8"></Percentage>
+                                    <h5>Python</h5>
                                 </div>
                                 <div className="item">
-                                    <Percentage percentage={75} color="#63b1d8"></Percentage>
-                                    <h5>Desarrollo web</h5>
+                                    <Percentage percentage={90} color="#63b1d8"></Percentage>
+                                    <h5>Bases de Datos</h5>
+                                </div>
+                                <div className="item">
+                                    <Percentage percentage={90} color="#63b1d8"></Percentage>
+                                    <h5>Angular</h5>
+                                </div>
+                                <div className="item">
+                                    <Percentage percentage={70} color="#63b1d8"></Percentage>
+                                    <h5>React</h5>
+                                </div>
+                                <div className="item">
+                                    <Percentage percentage={60} color="#63b1d8"></Percentage>
+                                    <h5>PHP</h5>
+                                </div>
+                                <div className="item">
+                                    <Percentage percentage={80} color="#63b1d8"></Percentage>
+                                    <h5>Microsoft 365</h5>
                                 </div>
                             </Carousel>
                         </div>

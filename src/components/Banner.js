@@ -7,8 +7,10 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
     "Ingeniero de Sistemas",
-    "Desarrollador",
-    "Administrador de Proyectos",
+    "Desarrollador de Software",
+    "Analista de Sistemas",
+    "Ingeniero de Automatización",
+    "Analista de Datos"
   ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(350 - Math.random() * 100);
@@ -44,27 +46,32 @@ export const Banner = () => {
     }
   };
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="banner" id="home">
       <Row className="aling-items-center">
         <Col xs={12} md={6} xt={7}>
-          
+
           <span className="tagline">Bienvenidos a mi Portafolio</span>
           <h1>{`Hola, soy Henry Bonilla`}</h1>
-          <div style={{ height: '60px'}}>
-          <h1>
-            <span className="wrap">{text}</span>
-          </h1>
+          <div style={{ height: '60px' }}>
+            <h1>
+              <span className="wrap">{text}</span>
+            </h1>
           </div>
           <p>
-            Descripción ........ Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Illo doloribus perspiciatis ipsum iure molestias
-            assumenda consectetur excepturi maiores! Delectus accusantium a
-            possimus id facilis laborum nemo odit voluptate quod. Beatae?
+            Ingeniero de Sistemas y Computación en formación en la Universidad Pedagógica y Tecnológica de Colombia. Con conocimientos en bases de datos (Oracle, MySQL, MongoDB) y desarrollo de software (Java, Python, JavaScript, TypeScript). Experiencia en tecnologías como Angular, Spring Boot, .Net y Docker. Familiarizado con sistemas operativos Linux y Windows. Orientado al logro y al detalle, con habilidades para trabajar en equipo y facilidad para adquirir nuevos conocimientos.
           </p>
           <button
             onClick={() => {
-              console.log("conectar");
+              scrollToSection("contact")
             }}
           >
             Contactame <i className="bi bi-arrow-right-circle"></i>

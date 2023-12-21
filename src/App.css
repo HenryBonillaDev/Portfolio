@@ -71,7 +71,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
-  font-size: 21px;
+  font-size: 25px;
 }
 
 span.navbar-text {
@@ -420,7 +420,7 @@ svg circle:nth-child(2) {
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 60%;
+  width: 70%;
 }
 
 .projects .nav.nav-pills {
@@ -488,6 +488,8 @@ svg circle:nth-child(2) {
 
 .proj-imgbox img {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 .proj-imgbox::before {
@@ -529,7 +531,7 @@ svg circle:nth-child(2) {
 }
 
 .proj-txt span {
-  color: #b8b8b8;
+  color: #fff;
   font-style: italic;
   font-weight: 400;
   letter-spacing: 0.8px;
