@@ -32,7 +32,7 @@ export const Skills = () => {
                             <h2>
                                 Habilidades
                             </h2>
-                            <p>Descripción</p>
+                            <p>Echa un vistazo a mis habilidades destacadas. Descubre cómo puedo aportar valor a través de mis talentos y experiencias.</p>
                             <Carousel className="skill-slider" responsive={responsive} infinite={true} >
                                 <div className="item">
                                     <Percentage percentage={80} color="#63b1d8"></Percentage>
