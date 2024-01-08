@@ -48,7 +48,7 @@ nav.navbar {
 }
 
 nav.navbar.scrolled {
-  padding: 18px 0px 0px 0px;
+  padding: 18px 0;
   background-color: #121212;
 }
 
@@ -83,7 +83,7 @@ span.navbar-text {
 
 .social-icon {
   display: inline-block;
-  margin-left: 14px;
+  /* margin-left: 14px; */
 }
 
 .social-icon a {
@@ -228,6 +228,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.full-width-row {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .banner .tagline {

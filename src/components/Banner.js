@@ -56,7 +56,7 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <Row className="aling-items-center">
+      <Row className="align-items-center full-width-row">
         <Col xs={12} md={6} lg={7}>
 
           <span className="tagline">Bienvenidos a mi Portafolio</span>
@@ -78,7 +78,7 @@ export const Banner = () => {
           </button>
         </Col>
         <Col xs={12} md={6} lg={5}>
-          <img src={image} alt="Imagen" />
+          <img src={image} alt="Imagen" className="img-fluid"/>
         </Col>
       </Row>
     </section>
