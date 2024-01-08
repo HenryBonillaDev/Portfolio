@@ -56,9 +56,8 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <Row className="align-items-center full-width-row">
+      <Row className="align-items-center" style={{ width: '100%' }}>
         <Col xs={12} md={6} lg={7}>
-
           <span className="tagline">Bienvenidos a mi Portafolio</span>
           <h1>{`Hola, soy Henry Bonilla`}</h1>
           
