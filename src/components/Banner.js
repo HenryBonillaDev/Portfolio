@@ -57,15 +57,15 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Row className="aling-items-center">
-        <Col xs={12} md={6} xt={7}>
+        <Col xs={12} md={6} lg={7}>
 
           <span className="tagline">Bienvenidos a mi Portafolio</span>
           <h1>{`Hola, soy Henry Bonilla`}</h1>
-          <div style={{ height: '60px' }}>
+          
             <h1>
               <span className="wrap">{text}</span>
             </h1>
-          </div>
+          
           <p>
             Ingeniero de Sistemas y Computación en formación en la Universidad Pedagógica y Tecnológica de Colombia. Con conocimientos en bases de datos (Oracle, MySQL, MongoDB) y desarrollo de software (Java, Python, JavaScript, TypeScript). Experiencia en tecnologías como Angular, Spring Boot, .Net y Docker. Familiarizado con sistemas operativos Linux y Windows. Orientado al logro y al detalle, con habilidades para trabajar en equipo y facilidad para adquirir nuevos conocimientos.
           </p>
@@ -77,7 +77,7 @@ export const Banner = () => {
             Contactame <i className="bi bi-arrow-right-circle"></i>
           </button>
         </Col>
-        <Col xs={12} md={6} xt={5}>
+        <Col xs={12} md={6} lg={5}>
           <img src={image} alt="Imagen" />
         </Col>
       </Row>
