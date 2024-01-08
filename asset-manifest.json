@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.646e3b5c.css",
-    "main.js": "/Portfolio/static/js/main.9835534e.js",
+    "main.css": "/Portfolio/static/css/main.b448a658.css",
+    "main.js": "/Portfolio/static/js/main.1b94ed17.js",
     "static/js/787.7da95b79.chunk.js": "/Portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/developer_banner.png": "/Portfolio/static/media/developer_banner.2995db3617d69578c1d6.png",
     "static/media/Marvel-game.png": "/Portfolio/static/media/Marvel-game.0090bcd8df1ef183774a.png",
@@ -19,12 +19,12 @@
     "static/media/revicons.ttf": "/Portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/Portfolio/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/Portfolio/index.html",
-    "main.646e3b5c.css.map": "/Portfolio/static/css/main.646e3b5c.css.map",
-    "main.9835534e.js.map": "/Portfolio/static/js/main.9835534e.js.map",
+    "main.b448a658.css.map": "/Portfolio/static/css/main.b448a658.css.map",
+    "main.1b94ed17.js.map": "/Portfolio/static/js/main.1b94ed17.js.map",
     "787.7da95b79.chunk.js.map": "/Portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.646e3b5c.css",
-    "static/js/main.9835534e.js"
+    "static/css/main.b448a658.css",
+    "static/js/main.1b94ed17.js"
   ]
 }
