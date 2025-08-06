@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0ed4b068.css",
-    "main.js": "/static/js/main.8b05c2aa.js",
+    "main.js": "/static/js/main.73d9f565.js",
     "static/js/453.ad7768ec.chunk.js": "/static/js/453.ad7768ec.chunk.js",
     "static/media/developer_banner.png": "/static/media/developer_banner.2995db3617d69578c1d6.png",
     "static/media/Marvel-game.png": "/static/media/Marvel-game.0090bcd8df1ef183774a.png",
@@ -15,16 +15,17 @@
     "static/media/Centros_Geometricos.png": "/static/media/Centros_Geometricos.7ca9267fab342e001918.png",
     "static/media/calc.png": "/static/media/calc.d2666d705da28bc61007.png",
     "static/media/Prototype.ttf": "/static/media/Prototype.be9924a47c44090561d7.ttf",
+    "static/media/whatsapp.png": "/static/media/whatsapp.1dd8ca2765f1f177ab22.png",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.0ed4b068.css.map": "/static/css/main.0ed4b068.css.map",
-    "main.8b05c2aa.js.map": "/static/js/main.8b05c2aa.js.map",
+    "main.73d9f565.js.map": "/static/js/main.73d9f565.js.map",
     "453.ad7768ec.chunk.js.map": "/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0ed4b068.css",
-    "static/js/main.8b05c2aa.js"
+    "static/js/main.73d9f565.js"
   ]
 }
