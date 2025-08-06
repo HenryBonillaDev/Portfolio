@@ -44,8 +44,8 @@ export const NavBar = () => {
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href="https://www.linkedin.com/in/henry-duvan-alexander-bonilla-urrego/" target="_blank" without rel="noreferrer"><i className="bi bi-linkedin"></i></a>
-                            <a href="https://github.com/HenryBonillaDev" target="_blank" without rel="noreferrer"><i className="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/henry-duvan-alexander-bonilla-urrego/" target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/HenryBonillaDev" target="_blank" rel="noreferrer"><i className="bi bi-github"></i></a>
                         </div>
                         <button className="vvd" onClick={() => { scrollToSection("contact") }}><span>Contactar</span></button>
                     </span>

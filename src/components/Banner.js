@@ -1,39 +1,35 @@
 import { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import image from "../assets/images/astronauta.svg";
+import { useCallback } from "react";
+import { useMemo } from "react";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(1);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = [
+  const toRotate = useMemo(() => [
     "Ingeniero de Sistemas",
     "Desarrollador de Software",
     "Analista de Sistemas",
     "Ingeniero de Automatización",
     "Analista de Datos"
-  ];
-  const [text, setText] = useState("");
-  const [delta, setDelta] = useState(350 - Math.random() * 100);
-  const period = 2000;
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
+  ], []);
 
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
+  const [text, setText] = useState("");
+  const [delta, setDelta] = useState(150 - Math.random() * 100);
+  const period = 2000;
+
+  const tick = useCallback(() => {
+    const i = loopNum % toRotate.length;
+    const fullText = toRotate[i];
+    const updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
 
     setText(updatedText);
+
     if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
+      setDelta(prevDelta => prevDelta / 2);
     }
 
     if (!isDeleting && updatedText === fullText) {
@@ -41,10 +37,21 @@ export const Banner = () => {
       setDelta(period);
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
-      setLoopNum(loopNum + 1);
+      setLoopNum(prev => prev + 1);
       setDelta(500);
     }
-  };
+  }, [loopNum, isDeleting, text, toRotate]);
+
+  useEffect(() => {
+    const ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => clearInterval(ticker);
+  }, [tick, delta]);
+
+
+
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -59,15 +66,16 @@ export const Banner = () => {
       <Row className="align-items-center" style={{ width: '100%' }}>
         <Col xs={12} md={6} lg={7}>
           <span className="tagline">Bienvenidos a mi Portafolio</span>
-          <h1>{`Hola, soy Henry Bonilla`}</h1>
-          
-            <h1>
-              <span className="wrap">{text}</span>
-            </h1>
-          
-          <p>
-            Ingeniero de Sistemas y Computación en formación en la Universidad Pedagógica y Tecnológica de Colombia. Con conocimientos en bases de datos (Oracle, MySQL, MongoDB) y desarrollo de software (Java, Python, JavaScript, TypeScript). Experiencia en tecnologías como Angular, Spring Boot, .Net y Docker. Familiarizado con sistemas operativos Linux y Windows. Orientado al logro y al detalle, con habilidades para trabajar en equipo y facilidad para adquirir nuevos conocimientos.
-          </p>
+          <h1>{`Hola, soy Duván Bonilla`}</h1>
+
+          <h1>
+            <span className="wrap">{text}</span>
+          </h1>
+          <div style={{ marginTop: '100px'}}>
+            <p>
+              Ingeniero de Sistemas y Computación con experiencia en planificación, diseño y desarrollo de software. Me destaco por un enfoque orientado al detalle y al logro, permitiéndome adoptar e implementar mejoras continuas en busca de la innovación tecnológica. Además, cuento con habilidades de comunicación efectiva, facilitando la colaboración en equipos multidisciplinarios y la articulación de soluciones tecnológicas.
+            </p>
+          </div>
           <button
             onClick={() => {
               scrollToSection("contact")
@@ -77,7 +85,7 @@ export const Banner = () => {
           </button>
         </Col>
         <Col xs={12} md={6} lg={5}>
-          <img src={image} alt="Imagen" className="img-fluid"/>
+          <img src={image} alt="Imagen" className="img-fluid" />
         </Col>
       </Row>
     </section>
