@@ -32,7 +32,7 @@ export const NavBar = () => {
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
-                <Navbar.Brand href="#home">Henry Bonilla</Navbar.Brand>
+                <Navbar.Brand href="#home">Duvan Bonilla DEV</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggler-icon"></span>
                 </Navbar.Toggle>
@@ -44,8 +44,8 @@ export const NavBar = () => {
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href="https://www.linkedin.com/in/henry-duvan-alexander-bonilla-urrego/" target="_blank"><i className="bi bi-linkedin"></i></a>
-                            <a href="https://github.com/HenryBonillaDev" target="_blank"><i className="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/henry-duvan-alexander-bonilla-urrego/" target="_blank" without rel="noreferrer"><i className="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/HenryBonillaDev" target="_blank" without rel="noreferrer"><i className="bi bi-github"></i></a>
                         </div>
                         <button className="vvd" onClick={() => { scrollToSection("contact") }}><span>Contactar</span></button>
                     </span>
